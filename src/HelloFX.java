@@ -1,36 +1,3 @@
-/* Command line arguments from the folder containing this file:
-javac --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX.java
-
-java --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX
-
-Where the system environment variable JAVAFX_HOME has been set to the \lib folder of the JavaFX SDK extracted to your system.
-
-================
-In case the system environment variable cannot be set properly > create the following configuration files :
-
-compile-<projectName> = 
--d bin
---module-path "Full\path\to\JavaFX\folder\lib" 
---add-modules javafx.controls
-<projectName>.java
-
-run-<projectName> =
--cp bin
---module-path "Full\path\to\JavaFX\folder\lib" 
---add-modules javafx.controls
-<projectName>
-
-where <projectName> is replaced by the name of the appropriate Java file, in this case HelloFX.
-
-Then use the console commands:
-javac @compile-<projectName>
-java @run-<projectName>
-
-===============
-These config files may be the practical solution whether or not a JAVA_HOME variable is set. If it is set, use the variable instead of the manually-entered file path in the configuration files.
-
-*/
-
 import javafx.application.Application; // overall program template
 import javafx.scene.Scene; // drawing surface object
 import javafx.scene.control.Label; // text area object
@@ -71,3 +38,36 @@ public class HelloFX extends Application {
     }
 
 }
+
+/* Command line arguments from the folder containing this file:
+javac --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX.java
+
+java --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX
+
+Where the system environment variable JAVAFX_HOME has been set to the \lib folder of the JavaFX SDK extracted to your system.
+
+================
+In case the system environment variable cannot be set properly > create the following configuration files :
+
+compile-<projectName> = 
+-d bin
+--module-path "Full\path\to\JavaFX\folder\lib" 
+--add-modules javafx.controls
+<projectName>.java
+
+run-<projectName> =
+-cp bin
+--module-path "Full\path\to\JavaFX\folder\lib" 
+--add-modules javafx.controls
+<projectName>
+
+where <projectName> is replaced by the name of the appropriate Java file, in this case HelloFX.
+
+Then use the console commands:
+javac @compile-<projectName>
+java @run-<projectName>
+
+===============
+These config files may be the practical solution whether or not a JAVA_HOME variable is set. If it is set, use the variable instead of the manually-entered file path in the configuration files.
+
+*/
