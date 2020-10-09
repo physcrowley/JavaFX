@@ -52,17 +52,19 @@ In case the system environment variable cannot be set properly > create the foll
 
 compile-<projectName> = 
 -d bin
---module-path "Full\path\to\JavaFX\folder\lib" 
+--module-path "Full/path/to/JavaFX/folder/lib" 
 --add-modules javafx.controls
 src/<projectName>.java
 
 run-<projectName> =
 -cp bin
---module-path "Full\path\to\JavaFX\folder\lib" 
+--module-path "Full/path/to/JavaFX/folder/lib" 
 --add-modules javafx.controls
 <projectName>
 
 where <projectName> is replaced by the name of the appropriate Java file, in this case HelloFX.
+
+**** All the "/" need to be forward slashes "/", not the Windows backslash "\" ****
 
 Then use the console commands:
 javac @compile-<projectName>
@@ -72,5 +74,4 @@ java @run-<projectName>
 These config files may be the practical solution whether or not a JAVAFX_HOME variable is set, especially if you are creating your own objects in separate .java files to add to the project > you would also need to add these files to the compilation arguments.
 
 If the JAVAFX_HOME variable is set, use it instead of the manually-entered file path in the configuration files. This allows you to change JavaFX versions by changing the variable instead of manually reconfiguring the compilation of your projects.
-
 */
