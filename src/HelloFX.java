@@ -40,6 +40,7 @@ public class HelloFX extends Application {
 }
 
 /* Command line arguments from the folder containing this file:
+
 javac --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX.java
 
 java --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX
@@ -53,7 +54,7 @@ compile-<projectName> =
 -d bin
 --module-path "Full\path\to\JavaFX\folder\lib" 
 --add-modules javafx.controls
-<projectName>.java
+src/<projectName>.java
 
 run-<projectName> =
 -cp bin
@@ -68,6 +69,8 @@ javac @compile-<projectName>
 java @run-<projectName>
 
 ===============
-These config files may be the practical solution whether or not a JAVA_HOME variable is set. If it is set, use the variable instead of the manually-entered file path in the configuration files.
+These config files may be the practical solution whether or not a JAVAFX_HOME variable is set, especially if you are creating your own objects in separate .java files to add to the project > you would also need to add these files to the compilation arguments.
+
+If the JAVAFX_HOME variable is set, use it instead of the manually-entered file path in the configuration files. This allows you to change JavaFX versions by changing the variable instead of manually reconfiguring the compilation of your projects.
 
 */
