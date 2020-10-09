@@ -3,10 +3,10 @@ javac --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX.java
 
 java --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX
 
-Where the system environment variable JAVAFX_HOME has been set to the \lib folder of the JavaFX sdk.
+Where the system environment variable JAVAFX_HOME has been set to the \lib folder of the JavaFX SDK extracted to your system.
 
 ================
-In case these cannot be set properly > create the following configuration files :
+In case the system environment variable cannot be set properly > create the following configuration files :
 
 compile-<projectName> = 
 -d bin
@@ -25,6 +25,8 @@ where <projectName> is replaced by the name of the appropriate Java file, in thi
 Then use the console commands:
 javac @compile-<projectName>
 java @run-<projectName>
+
+These config files may be the practical solution whether or not a JAVA_HOME variable is set. If it is set, use the variable instead of the manually-entered file path in the configuration files.
 */
 
 import javafx.application.Application;
