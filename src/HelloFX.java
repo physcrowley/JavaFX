@@ -26,14 +26,16 @@ Then use the console commands:
 javac @compile-<projectName>
 java @run-<projectName>
 
+===============
 These config files may be the practical solution whether or not a JAVA_HOME variable is set. If it is set, use the variable instead of the manually-entered file path in the configuration files.
+
 */
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
+import javafx.application.Application; // overall program template
+import javafx.scene.Scene; // drawing surface object
+import javafx.scene.control.Label; // text area object
+import javafx.scene.layout.StackPane; // grid object for aligning graphic elements
+import javafx.stage.Stage; // window object
 
 /**
  * Simple Hello World window application
