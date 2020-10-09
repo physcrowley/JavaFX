@@ -46,8 +46,14 @@ public class HelloFX extends Application {
      */
     @Override
     public void start(Stage stage) {
-        String javaVersion = System.getProperty("java.version");
+        // these getProperty calls might not work if the system environment
+        // variables (especially the PATH entries) are not set properly
+        // If that is the case, just change the Label below to a simple
+        // "Hello world!" text
+        String javaVersion = System.getProperty("java.version");  
         String javafxVersion = System.getProperty("javafx.version");
+
+
         Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
         Scene scene = new Scene(new StackPane(l), 640, 480);
         stage.setScene(scene);
