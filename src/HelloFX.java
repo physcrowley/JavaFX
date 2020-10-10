@@ -15,15 +15,14 @@ public class HelloFX extends Application {
      */
     @Override
     public void start(Stage stage) {
-        // these getProperty calls might not work if the system environment
-        // variables (especially the PATH entries) are not set properly
-        // If that is the case, just change the Label below to a simple
-        // "Hello world!" text
+        Label txt = new Label("Hello, JavaFX!");
+
+        /* Alternate Label using properly set system PATH variables
         String javaVersion = System.getProperty("java.version");  
         String javafxVersion = System.getProperty("javafx.version");
-
-
-        Label txt = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Label txt = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " 
+                        + javaVersion + ".");
+        */
         Scene scene = new Scene(new StackPane(txt), 640, 480);
         stage.setScene(scene);
         stage.show();
@@ -39,13 +38,15 @@ public class HelloFX extends Application {
 
 }
 
-/* Command line arguments from the folder containing this file:
+/* Windows command line arguments from the folder containing this file:
 
 javac --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX.java
 
 java --module-path "%JAVAFX_HOME%" --add-modules javafx.controls HelloFX
 
 Where the system environment variable JAVAFX_HOME has been set to the \lib folder of the JavaFX SDK extracted to your system.
+
+*** I have recently had issues with the Windows PATH variable not being interpreted correctly by the javac command and getting the error : cannot find module javafx.controls > in that case, use the config files as described below. ***
 
 ================
 In case the system environment variable cannot be set properly > create the following configuration files :
@@ -62,7 +63,7 @@ run-<projectName> =
 --add-modules javafx.controls
 <projectName>
 
-where <projectName> is replaced by the name of the appropriate Java file, in this case HelloFX.
+where <projectName> is replaced by the name of the appropriate Java file, in this case HelloFX, and "Full/path/..." is the actual path on your system, for example : "C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib"
 
 **** All the "/" need to be forward slashes "/", not the Windows backslash "\" ****
 
@@ -71,7 +72,5 @@ javac @compile-<projectName>
 java @run-<projectName>
 
 ===============
-These config files may be the practical solution whether or not a JAVAFX_HOME variable is set, especially if you are creating your own objects in separate .java files to add to the project > you would also need to add these files to the compilation arguments.
-
-If the JAVAFX_HOME variable is set, use it instead of the manually-entered file path in the configuration files. This allows you to change JavaFX versions by changing the variable instead of manually reconfiguring the compilation of your projects.
+These config files may be the practical solution whether or not a JAVAFX_HOME variable is set, especially if you are creating your own objects in separate .java files to add to the project > you would also need to add these files to the compilation arguments and that becomes more manageable in a configuration file.
 */
