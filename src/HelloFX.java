@@ -17,7 +17,7 @@ public class HelloFX extends Application {
     public void start(Stage stage) {
         Label txt = new Label("Hello, JavaFX!");
 
-        /* Alternate Label using properly set system PATH variables
+        /*//Alternate Label using properly set system PATH variables
         String javaVersion = System.getProperty("java.version");  
         String javafxVersion = System.getProperty("javafx.version");
         Label txt = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " 
