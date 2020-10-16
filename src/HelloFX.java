@@ -7,7 +7,8 @@ import javafx.stage.Stage; // window object
 /**
  * Simple Hello World window application
  */
-public class HelloFX extends Application {
+public class HelloFX extends Application { 
+    // héritage : HelloFX hérite tous les attributs et méthodes d'Application
 
     /**
      * Main JavaFX script
