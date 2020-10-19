@@ -1,6 +1,8 @@
 # Exemples JavaFX de base
 Ce dossier contient des éléments de base pour produire des applications graphiques Java avec la module JavaFX.
 
+Voir aussi les tutoriels suivants : [JavaFX Tutorial for Beginners](https://www.youtube.com/playlist?list=PLS1QulWo1RIaUGP446_pWLgTZPiFizEMq)
+
 ## Obtenir JavaFX
 Voir le site [openjfx.io](https://openjfx.io) pour télécharger et obtenir la documentation nécessaire pour installer JavaFX.
 
