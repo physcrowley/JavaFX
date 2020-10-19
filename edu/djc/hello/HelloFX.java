@@ -27,6 +27,11 @@ public class HelloFX extends Application {
                         + javaVersion + ".");
 
         Scene scene = new Scene(new StackPane(txt), 640, 480);
+
+        /* DOM
+        Stage <-- Scene <-- StackPane <-- Label
+        */
+
         stage.setScene(scene);
         stage.show();
     }
