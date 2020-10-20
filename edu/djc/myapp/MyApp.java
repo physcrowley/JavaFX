@@ -18,4 +18,9 @@ public class MyApp extends Application
         stage.setScene(scene);
         stage.show();
     }
+
+    public static void main(final String[] args) 
+    {
+        launch(args);
+    }
 }
