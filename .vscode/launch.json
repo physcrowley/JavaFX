@@ -10,7 +10,7 @@
             "request": "launch",
             "mainClass": "edu.djc.button.MovingButtonApp",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -18,14 +18,14 @@
             "request": "launch",
             "mainClass": "edu.djc.button.ButtonApp",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -33,7 +33,7 @@
             "request": "launch",
             "mainClass": "edu.djc.hello.HelloApp",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -41,7 +41,7 @@
             "request": "launch",
             "mainClass": "edu.djc.hello.HelloFX",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -49,7 +49,7 @@
             "request": "launch",
             "mainClass": "edu.djc.myapp.MyApp",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -57,7 +57,7 @@
             "request": "launch",
             "mainClass": "edu.djc.testjfxsetup.App",
             "projectName": "JavaFX_5db3f567",
-            "vmArgs": "-cp bin --module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/JavaFX/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
