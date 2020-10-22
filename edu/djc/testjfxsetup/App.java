@@ -1,4 +1,4 @@
-package edu.djc;
+package edu.djc.testjfxsetup;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
