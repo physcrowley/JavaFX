@@ -39,7 +39,7 @@ public class MovingButtonApp extends Application {
             new KeyFrame(Duration.seconds(4), new KeyValue(btn.translateXProperty(), 0)),
             new KeyFrame(Duration.seconds(4), new KeyValue(btn.translateYProperty(), 0))
         );
-        //t.setAutoReverse(true);
+        //t.setAutoReverse(true); // original example
         t.setCycleCount(Timeline.INDEFINITE);
         t.play();
 
